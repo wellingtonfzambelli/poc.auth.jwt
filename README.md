@@ -35,9 +35,14 @@ Go to the method that you want to protect and assign the "Authorize" decorator
 ![image](https://github.com/user-attachments/assets/9da606aa-bf3a-4477-a61e-dff28c4cd654)
 
 Run the project with Docker using the dockerfile
+![image](https://github.com/user-attachments/assets/30361e8e-b6a1-4dd4-a014-4d6fe46d3a3a)
 
 Here is the swagger with the method to get the token and another one to consume the api information sending the token
 ![image](https://github.com/user-attachments/assets/997d8661-5792-4d1d-a22b-9ef672b0703b)
+
+Import the postman file uploaded in the root folder
+![image](https://github.com/user-attachments/assets/f526c683-e3fd-4bff-b6c8-912eb3eba50c)
+![image](https://github.com/user-attachments/assets/2d9dad67-e609-475f-95ec-40f841988ad5)
 
 Postman trying to call method "Forecast" without JWT and receiving a 401 auth error
 ![image](https://github.com/user-attachments/assets/2713ffda-4d24-4f10-bb85-118fbc9a5a24)
@@ -51,3 +56,6 @@ Postman getting the token using the payload
 
 Now we have access to the method "Forecast" using a JWT
 ![image](https://github.com/user-attachments/assets/b32c7091-57f9-4f03-a25e-8142a8e3b01c)
+
+
+
