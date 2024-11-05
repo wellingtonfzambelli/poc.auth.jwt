@@ -26,7 +26,7 @@ Create TokenProvider class to implement the token logic
 
 Create a AuthContoller and implement a method to get email/password and verify if exists in your database
 In this case, I mocked the user object on the constructor 
-![image](https://github.com/user-attachments/assets/e44b7037-6aa8-4283-8a41-4528f714250c)
+![image](https://github.com/user-attachments/assets/3aec319d-4ab2-42d7-867f-d94fafa7191e)
 
 Go to the method that you want to protect and assign the "Authorize" decorator
 ![image](https://github.com/user-attachments/assets/9da606aa-bf3a-4477-a61e-dff28c4cd654)
