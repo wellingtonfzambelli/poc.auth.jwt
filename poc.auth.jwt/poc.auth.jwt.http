@@ -1,0 +1,6 @@
+@poc.auth.jwt_HostAddress = http://localhost:5272
+
+GET {{poc.auth.jwt_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
