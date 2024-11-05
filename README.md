@@ -37,7 +37,7 @@ Go to the method that you want to protect and assign the "Authorize" decorator
 Run the project with Docker using the dockerfile
 
 Here is the swagger with the method to get the token and another one to consume the api information sending the token
-![image](https://github.com/user-attachments/assets/1e3aa6c6-9d64-4426-916f-e5ee2c990227)
+![image](https://github.com/user-attachments/assets/0adeebde-ff7f-4139-befe-2ce6bf44e4d3)
 
 Postman trying to call method "Forecast" without JWT and receiving a 401 auth error
 ![image](https://github.com/user-attachments/assets/fa9a81c2-abe4-4de7-9c5a-e1aaec81c9c0)
