@@ -10,11 +10,11 @@ namespace poc.auth.jwt.Controllers;
 public sealed class AuthController : Controller
 {
     private readonly IList<User> _users = new List<User>();
-    private readonly ITokenProvider _tokenProvider;
+    private readonly IJwtTokenProvider _jwtTokenProvider;
 
-    public AuthController(ITokenProvider tokenProvider)
+    public AuthController(IJwtTokenProvider jwtTokenProvider)
     {
-        _tokenProvider = tokenProvider;
+        _jwtTokenProvider = jwtTokenProvider;
 
         // Mocking User
         _users.Add(new User
@@ -39,12 +39,8 @@ public sealed class AuthController : Controller
             is var user && user is null)
             return BadRequest("E-mail or Password invalid.");
 
-        var token = await _tokenProvider.GenerateCredentialsAsync(user);
+        var token = _jwtTokenProvider.GetToken(user);
 
-        return Ok(new
-        {
-            accessTokenProp = token.Item1,
-            refreshToken = token.Item2
-        });
+        return Ok(new { accessToken = token });
     }
 }

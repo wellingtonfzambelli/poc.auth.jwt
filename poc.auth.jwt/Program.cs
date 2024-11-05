@@ -22,20 +22,19 @@ builder.Host.ConfigureAppConfiguration((hostingContext, configurationBuilder) =>
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerConfiguration();
 builder.Services.AddJwtConfiguration(_configuration);
-
 var app = builder.Build();
 
+
+
+
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+if (app.Environment.IsDevelopment()) { }
 
 app.AppUseJwtConfiguration();
 app.UseHttpsRedirection();
 app.MapControllers();
+app.UseSwaggerConfiguration();
 
 app.Run();

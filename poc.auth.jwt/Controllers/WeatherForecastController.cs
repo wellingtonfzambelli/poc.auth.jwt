@@ -6,6 +6,7 @@ namespace poc.auth.jwt.Controllers;
 
 [ApiController]
 [Route("api/v1/weather")]
+[Authorize]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
@@ -13,7 +14,7 @@ public class WeatherForecastController : ControllerBase
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-    [Authorize]
+    
     [HttpGet]
     [Route("forecast")]
     public IEnumerable<WeatherForecast> Get()

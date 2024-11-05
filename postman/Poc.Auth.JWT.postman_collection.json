@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "96dc22fd-568b-45c9-be9f-450badf2c805",
+		"name": "Poc.Auth.JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31620614"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"wellington.zambelli@test.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:32773/api/v1/auth/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "32773",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Weather Forecast",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IndlbGxpbmd0b24uemFtYmVsbGkiLCJlbWFpbCI6IndlbGxpbmd0b24uemFtYmVsbGlAdGVzdC5jb20iLCJuYmYiOjE3MzA4MzM1MTMsImV4cCI6MTczMDgzMzU3MywiaWF0IjoxNzMwODMzNTEzfQ.ms1Y8qlnhsEVkoHIUWyK20na_ZhLs_t61k0wy2nB8uc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:32773/api/v1/weather/forecast",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "32773",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"forecast"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
