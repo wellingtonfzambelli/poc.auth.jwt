@@ -31,6 +31,11 @@ In this case, I mocked the user object on the constructor
 Go to the method that you want to protect and assign the "Authorize" decorator
 ![image](https://github.com/user-attachments/assets/9da606aa-bf3a-4477-a61e-dff28c4cd654)
 
+Run the project with Docker using the dockerfile
+
+Here is the swagger with the method to get the token and another one to consume the api information sending the token
+![image](https://github.com/user-attachments/assets/1e3aa6c6-9d64-4426-916f-e5ee2c990227)
+
 Postman trying to call method without JWT and receiving a 401 auth error
 ![image](https://github.com/user-attachments/assets/fa9a81c2-abe4-4de7-9c5a-e1aaec81c9c0)
 
