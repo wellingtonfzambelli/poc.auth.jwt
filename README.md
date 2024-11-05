@@ -24,6 +24,9 @@ Add a secret key that will be used to generate and validate the token
 Create TokenProvider class to implement the token logic
 ![image](https://github.com/user-attachments/assets/c20a6094-6a59-4646-b621-4f5691fc4a34)
 
+Create the AuthenticationConfig class to configure the middleware
+![image](https://github.com/user-attachments/assets/df7044bb-1a45-4b08-8b94-e4b4dab8849b)
+
 Create a AuthContoller and implement a method to get email/password and verify if exists in your database
 In this case, I mocked the user object on the constructor 
 ![image](https://github.com/user-attachments/assets/3aec319d-4ab2-42d7-867f-d94fafa7191e)
