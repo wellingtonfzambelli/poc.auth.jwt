@@ -36,7 +36,16 @@ Run the project with Docker using the dockerfile
 Here is the swagger with the method to get the token and another one to consume the api information sending the token
 ![image](https://github.com/user-attachments/assets/1e3aa6c6-9d64-4426-916f-e5ee2c990227)
 
-Postman trying to call method without JWT and receiving a 401 auth error
+Postman trying to call method "Forecast" without JWT and receiving a 401 auth error
 ![image](https://github.com/user-attachments/assets/fa9a81c2-abe4-4de7-9c5a-e1aaec81c9c0)
 
+Postman getting the token using the payload
+{
+    "email": "wellington.zambelli@test.com",
+    "password": "123456"
+}
+![image](https://github.com/user-attachments/assets/f0f00c0c-21ad-4a94-9e41-05ce5a675915)
+
+Now we have access to the method "Forecast" using a JWT
+![image](https://github.com/user-attachments/assets/93e857e5-0191-442e-a314-6baa61c05cb9)
 
