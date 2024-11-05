@@ -37,6 +37,9 @@ Go to the method that you want to protect and assign the "Authorize" decorator
 Run the project with Docker using the dockerfile
 ![image](https://github.com/user-attachments/assets/30361e8e-b6a1-4dd4-a014-4d6fe46d3a3a)
 
+![image](https://github.com/user-attachments/assets/cc5714b7-1570-4d0c-ba5f-571bc7aa1aad)
+
+
 Here is the swagger with the method to get the token and another one to consume the api information sending the token
 ![image](https://github.com/user-attachments/assets/997d8661-5792-4d1d-a22b-9ef672b0703b)
 
@@ -59,5 +62,7 @@ Postman getting the token using the payload
 Now we have access to the method "Forecast" using a JWT
 ![image](https://github.com/user-attachments/assets/b32c7091-57f9-4f03-a25e-8142a8e3b01c)
 
+Access the https://jwt.io/ and get the JWT Content
 
+![image](https://github.com/user-attachments/assets/1cf25616-39cf-4771-99c0-06d6c62a7830)
 
